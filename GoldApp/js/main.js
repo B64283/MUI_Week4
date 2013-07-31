@@ -40,18 +40,18 @@ var getData = function(){
 
 };
 
-var storeData = function(data){
+var storeData = function(data, key){
    
     //function storeData(data) {
 	    //if there is no key, this means this is a new item and needs a new key
+	    if (!key){		   
+	        var id           = Math.floor(Math.random()*10000001);
 	    
-		   var id           = Math.floor(Math.random()*10000001);
-	    
-	     // set id to existing key we"re editing so it will save over the data
-	     // the key is the same key that is passed along from the edit submit event handeler.
-	     // then goes to the validate function and the passed here, into the stor data function
-		    
-	   
+	     }else{	    
+		 
+		  id = key;
+  
+	   }
    
    
     var item			  = {}; 

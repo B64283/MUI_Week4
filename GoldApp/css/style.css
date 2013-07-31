@@ -4,7 +4,7 @@
 */
 
 
-h1 {
+/*h1 {
 	border:#0b03a0;
 	font-size: 18px;
 	text-align:right;
@@ -81,14 +81,14 @@ li {
 }*/
 label.error {
 	display: block;
-	margin: 5px 0;
+	margin: 1px 0;
 	color: #ff0d0d;
 		
 }
 	
 label {
-	color: rgba(0,0,0,1);
-	font-family: sans-serif;
+	color: rgba(255,163,0,1);
+	font-family: fantasy;
 	font-size: 18px;
 	font-weight: bold;
     text-align: left;	
@@ -104,29 +104,11 @@ label {
 	 
 	 
 }	*/
-input[type="text"] {
-	width: 190px;
 }
 	
-ul {
-	color: rgba(0,0,0,1);
-	
-}
-input[type="search"] {
-    width: 280px;
-    height: auto;
-    
-} 
-title {
-text-align: center;
-}
-
 #tterrorsLink {
     display: none;
     }
-
-#addItem {
-    background-color: #808080;
 
 
 
