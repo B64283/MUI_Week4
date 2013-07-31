@@ -1,0 +1,143 @@
+/* Matthew Darke
+   VFW Project 4
+   1306 style.css
+*/
+
+
+h1 {
+	border:#0b03a0;
+	font-size: 18px;
+	text-align:right;
+	color:rgba(253,167,38,1);
+	 
+}
+#page1 {
+	background-image: linear-gradient(#8ba2b6 46.03%);
+}
+
+
+
+
+
+}
+a:link {
+	display: inline;
+	font-size:22px ;
+	font-weight:bold ;
+	text-align: -webkit-auto ;
+	text-decoration: underline ;
+	color: #fb55cc;
+	background-color: none;
+	padding-left: 20px ;
+	width:33px ;
+	
+}
+
+
+
+
+legend {
+	font-size: 40;
+	color: #0b0585;
+	font-weight: bold;
+    border: bold;
+}
+body {
+    background-image: -webkit-linear-gradient(#c1c1c1 0%, #c7eeff 28.48%)
+}
+h2,h3 {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+	
+	color: #ffa81c
+}
+form fieldset ul input {
+    width: 180px;
+	padding: 5px;
+	margin: 5px;
+	font-family: fantasy;
+	
+}
+li {
+	color: rgba(9,5,117,1);
+	font-size: 22px;
+	letter-spacing: normal;
+	font-family: sans-serif;
+	
+	
+	
+}
+/*input[type="submit"] {
+	margin: 50px;
+	margin-top: 5px;
+	padding: 13px;
+	font-size: larger;
+    width: 190px;
+	height: 40px;
+	text-align: center;
+	
+	
+}*/
+label.error {
+	display: block;
+	margin: 5px 0;
+	color: #ff0d0d;
+		
+}
+	
+label {
+	color: rgba(0,0,0,1);
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+    text-align: left;	
+}	
+/*fieldset {
+	background-image:-webkit-linear-gradient(#a2f0fc 0%, #e3e3e3 65.56%);
+	border-color: #1505a0;
+	padding:20px
+	}*/	
+	
+/*input[type="checkbox"] {
+	  background-color: #1b0a8b;
+	 
+	 
+}	*/
+input[type="text"] {
+	width: 190px;
+}
+	
+ul {
+	color: rgba(0,0,0,1);
+	
+}
+input[type="search"] {
+    width: 280px;
+    height: auto;
+    
+} 
+title {
+text-align: center;
+}
+
+#tterrorsLink {
+    display: none;
+    }
+
+#addItem {
+    background-color: #808080;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

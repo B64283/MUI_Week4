@@ -1,0 +1,514 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Travel Planner</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><! scales to device-->
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<!link rel="stylesheet" href="themes/Awesome.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />	
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+    
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1" data-filter="true">
+    <div data-theme="a" data-role="header" data-position="fixed" >
+        <h3>
+            Travel Planner
+        </h3>
+    </div>
+    <div data-role="content">
+        <a href="#Home">
+            <div style="width: 288px; height: 130px; position: relative; background-color: #c4c2c2; border: 0px solid #b8b8b8;">
+                <a href="Pageadditem.html" data-ajax="false">
+                     <img src="images/Untitled-1.png" alt="Untitled-1.jpg" width="288" height="130" alt="image" style="position: relative; top: 50%; left: 50%; margin-left: -144px; margin-top: -66px"></a>
+                
+            </div>
+            
+        </a>
+                <div data-role="fieldcontain">
+                
+            <label for="searchinput1">
+                Search A Plan
+            </label>
+            <!input name="" id="searchinput1" placeholder="Search" value="" type="search">
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true" data-filter="true">
+            <li data-role="list-divider" role="heading">
+                Browse Categories...
+            </li>
+            <li data-theme="a">
+                <a href="#pageError" data-transition="slide" data-filter="true">
+                    Travel Budget
+                </a>
+            </li>
+            <!data for page goes here>
+            <li data-theme="a">
+                <a href="#pageError" data-transition="slide">
+                    Travel Items
+                </a>
+            </li>
+             <!data for page goes here>            
+           <li data-theme="a">
+                <a href="#pageError"  data-transition="slide">
+                    Travel Date
+                </a>
+            </li>
+            <!Data for page goes here>
+            <li data-theme="a">
+                <a href="#pageError"  data-transition="slide">
+                    Destination
+                </a>
+            </li>
+            
+            <li data-theme="a">
+                <a href="#pageError" data-transition="slide">
+                    Travel Type
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div data-theme="b" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="a" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#pageN" data-transition="fade" data-theme="a" data-icon="info">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#page-S"data-ajax="false" data-transition="fade" data-theme="a" data-icon="plus">
+                        Suggest
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>	
+<!-- Home --><!About Page>
+<div data-role="page" id="page2" data-add-back-btn="true">
+    <div data-theme="a" data-role="header" data-position="fixed">
+        <h3>
+            Info Page
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="fieldcontain">
+           
+        </div>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true" data-filter="true">
+            <li data-role="list-divider" role="heading">
+                About
+            </li>
+            <li data-theme="a">
+                <a href="#pagecredit" data-transition="slidefade">
+                    Credits
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#page7" data-transition="slidefade">
+                    Author
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagegit" data-transition="slidefade">
+                    Gold gh-pages
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagegit" data-transition="slidefade">
+                    Bronze gh-pages
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pagegit" data-transition="slidefade">
+                    GitHub Repository
+                </a>
+            </li>
+        </ul>
+       <div data-theme="a" data-role="footer" data-position="fixed" data-add-back-btn="true">
+        <h3>
+            Info
+        </h3>
+       </div>
+    </div>
+</div>
+        
+                 
+ <!-- Author Info -->
+<div data-role="page" id="page7" data-add-back-btn="true" >
+    <div data-theme="a" data-role="header" >
+        <h3>
+            Author Info
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="collapsible-set">
+            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Name
+                </h3>
+                <p>Matthew Darke</p>
+            </div>
+        </div>
+        <div data-role="collapsible-set">
+            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Likes
+                </h3>
+                <p>Take family on vacation and travel</p>
+            </div>
+        </div>
+        <div data-role="collapsible-set">
+            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+                <h3>
+                    Education
+                </h3>
+                <p>Going to Full Sail University for Bachelor of science degree in Mobile development</p>
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            Info
+        </h3>
+    </div>
+</div>          
+</div>          
+ <!-- Suggestions -->
+<div data-role="page" id="page-S">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Suggestions
+        </h3>
+    </div>
+    <div data-role="content"><!__________________________________________________________________>
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="a">
+                <a href="#page1camp" data-transition="slide">
+                    <img src="images/dreamstimecomp_24277331camping.png" class="ui-li-has-thumb" />
+                    Camping Trips
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pageError" data-transition="slide">
+                    <img src="images/dreamstimecomp_26626795Family.png" class="ui-li-has-thumb" />  
+                    Family Vacations
+                </a>
+            </li>
+            <li data-theme="a">
+                <a href="#pageError" data-transition="slide">
+                    <img src="images/dreamstimecomp_29229797Romantic.png" class="ui-li-has-thumb" />                    
+                    Romantic Getaways
+                </a>
+            </li>
+        </ul>
+    </div>
+ <div data-theme="a" data-role="footer" data-position="fixed">
+     <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="a" data-icon="home">
+                        Home
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#pageN" data-transition="fade" data-theme="a" data-icon="info">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="Pageadditem.html"data-ajax="false" data-transition="fade" data-theme="a" data-icon="plus">
+                        Suggest
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>	
+ 
+<!-- camping ideas -->
+<div data-role="page" id="page1camp" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Camping Ideas
+        </h3>
+    </div>
+    <div data-role="content">
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+            <img src="images/dreamstimecomp_156592lake.png" class="ui-li-has-thumb ui-shadow" />
+                   <p>Go lake camping</p>
+                   <p></p>
+            </div>
+            <div class="ui-block-b">
+            <img src="images/dreamstimecomp_1079707yosemite.png" class="ui-li-has-thumb ui-shadow" />
+                   <p>Camp at Yosemite</p>
+                   <p></p>
+            </div>
+            <div class="ui-block-a">
+            <img src="images/dreamstimecomp_11285980desert.png" class="ui-li-has-thumb ui-shadow" />
+                   <p> Go desert camping</p>
+                   <p></p>
+            </div>
+            <div class="ui-block-b">
+            <img src="images/dreamstimecomp_29988366beach.png" class="ui-li-has-thumb ui-shadow" />
+                   <p>Camp at the beach</p>
+                   <h4></h4>
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            
+        </h3>
+    </div>
+</div> 
+<!-- Home -->
+<div data-role="page" id="pagecredit" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Credits
+        </h3>
+    </div>
+    <div data-role="content">
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Family beach
+                </h3>
+                <p>Happy family walking on sea beach </p>
+                <p>By Olesiabilkei from dreamstime.com</p>
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Camping night
+                </h3>
+                <p>Camping night couple cooking by campfire</p>
+                <p>By Candybox from dreamstime.com</p>
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Business travel
+                </h3>
+                <p>Business travel</p>
+                <p>By Suphakit73 from dreamstime.com</p>
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Romantic
+                </h3>
+                <p>Romantic getaway and escape to a tropical beach</p>
+                <p>By Skypixel from dreamstime.com</p>            
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Lake
+                </h3>
+                <p>Camping By Jeu from dreamstime.com</p>            
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Desert
+                </h3>
+                <p>Camping tent in the Mojavie desert</p>
+                <p>By Jbatt from dreamstime.com</p>           
+             </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Yosemite
+                </h3>
+                <p>El Capitan and lower falls</p>
+                <p>By Tashka from dreamstime.com</p>            
+            </div>
+        </div>
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-role="collapsible">
+                <h3>
+                    Beach camp
+                </h3>
+                <p>Beach camping</p>
+                <p>By Between11 from dreamstime.com</p>            
+            </div>
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>Images dreamstime.com
+        </h3>
+    </div>
+</div> 
+ 
+ <div data-role="page" id="pageError" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+           No items found
+        </h3>
+    </div>
+    <div data-role="content">    
+    <p>This page is under construction.</p>
+    <p>Please try back later</p>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            
+        </h3>
+    </div>
+</div> 
+ </div>  <!News stream>
+<div data-role="page" id="pageN" data-add-back-btn="true">
+    <div data-role="header">
+        <h3>News stream</h3>
+    <div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3>family Vacation to Disney World</h3>
+                <p>Aug 23 2013 for five days</p>
+            </a></li>
+     <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3>Romantic getaway to Paris</h3>
+                <p>Oct 01 2013</p>
+            </a></li>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3>Camping Trip to Yosemite</h3>
+                <p>Jan 10 2014</p>
+            </a></li>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3>Business trip to Israel</h3>
+                <p>9 days starting Feb 4 2014</p>
+            </a></li>
+   <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <h3>Vacation to Hawaii </h3>
+                <p>14 days starting may 5 2014</p>
+            </a></li>
+        
+        </ul>
+   </div>    
+  <div data-role="footer">
+      <h4></h4>
+  </div>
+ </div>   
+
+<div data-role="page" id="pagegit" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Links 
+        </h3>
+    </div>
+    <div data-role="content">
+    <p>GitHub Repository</p>
+    <p>https://github.com/B64283/MUI_Week2.git</p>
+    <p>Not working "YET"</p>
+    <p>Gh gold and bronze gh-pages http://b64283.github.io/MUI_Week2</p>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            
+        </h3>
+    </div>
+</div>            
+</div>          
+       
+<div data-role="page" id="pageError" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+           No items found
+        </h3>
+    </div>
+    <div data-role="content">    
+    <p>This page is under construction.</p>
+    <p>Please try back later</p>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            
+        </h3>
+    </div>
+</div> 
+</div>
+
+<div data-role="page" id="pagegit" data-add-back-btn="true">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Links 
+        </h3>
+    </div>
+    <div data-role="content">
+    <p>GitHub Repository</p>
+    <p>https://github.com/B64283/MUI_Week2.git</p>
+    <p>Not working "YET"</p>
+    <p>Gh gold and bronze gh-pages http://b64283.github.io/MUI_Week2</p>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3>
+            
+        </h3>
+    </div>
+</div>            
+</div>          
+           
+           
+           
+           <!-- JavaScript under here -->
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/main.js" type="text/javaScript"></script>
+</body>
+</html>
+
+
+
+
+
+
+
