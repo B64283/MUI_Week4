@@ -22,8 +22,9 @@
    	               <a href="index.html" id="addNew" style="display:none;">Add A Travel</a> 
    		<form action="#" method="post" id= "vacationForm"> <!-- post submits data behind the scenes -->
               
-            <fieldset>
+            
         	    <legend>Vacation Destination</legend>
+        	<fieldset>    
         	    <span>*fields are required.</span>
         	    <ul id="errors"></ul>
         	    <ul id="questions">
@@ -36,22 +37,25 @@
                   name="quantity" id="quantity" placeholder="enter number only"></label></li>
         	  </ul>
             </fieldset>
-            <fieldset>
+            
         	    <legend>Important Items</legend>                       	
+            <fieldset>   
                <ul>
              	    <li><label for="Clothes">Clothes</label><input type= "checkbox"  value="Clothes" id="Clothes"  /></li>
                     <li><label for="Medication">Medication</label><input type= "checkbox"  value="Medication" id="Medication" /></li>
                     <li><label for="Toiletries">Toiletries</label><input type= "checkbox"  value="Toiletries" id="Toiletries"  /></li>                    
                 </ul>
              </fieldset>                          
+             <legend>Budget Planner</legend>             
              <fieldset>                   
-                 <legend>Budget Planner</legend>
+                 
                      <label for="range">Budget scale:</label><output for="range" name="rating">5050</output><br />
                      <input type="range" min="100" max="10000" id="range"  onchange="rating.value=this.value" name="range" type="range"></input>
                             
               </fieldset>
-   	          <fieldset>
+   	          
    	              <legend>Set Date</legend>
+   	           <fieldset>   	                  
    	                  <label for="startdate">Vacation Date</label>
                       <input type="date" min="1904-03-17" max="1904-05-17" id="startdate" name="startdate" required aria-required="true"placeholder="1911-03-17"> 
    	              <ul>    

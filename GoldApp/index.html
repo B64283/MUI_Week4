@@ -1,4 +1,5 @@
 <!doctype html>  
+<!gold>
 <html lang="en">
 <head>
 
@@ -15,8 +16,8 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="css/themes/TravelBranding.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />	
+	<link rel="stylesheet" href="css/themes/TravelBranding.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.css" />	
 	<link rel="stylesheet" href="css/style.css" />
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -26,11 +27,8 @@
 <body>
 <!-- Home -->
 <div data-role="page" id="page1" data-theme="a"  >
-    <div data-role="header" data-theme="a" data-position="fixed">
-        
-          
-          <img src="images/TravelBrand.png" />  
-        
+    <div data-role="header" data-theme="a" >
+      <img src="images/TravelBrand.png" />  
     </div>
     <div data-role="content">
         <a href="#Home">
@@ -113,19 +111,19 @@
 </div>	
 
 <!--About Page-->
-<div data-role="page" id="page2" data-theme="a" data-add-back-btn="true">
+<div data-role="page" id="page2" data-theme="a" data-back-btn="true">
     <div data-theme="a" data-role="header" data-position="fixed">
-        <h3>
-            Info Page
-        </h3>
-    </div>
+      
+      <img src="images/TravelBrand.png"  /> 
+       
+     </div>
     <div data-role="content">
         <div data-role="fieldcontain">
            
         </div>
         <ul data-role="listview" data-divider-theme="a" data-inset="true" data-filter-theme="a" data-filter="true">
             <li data-role="list-divider" role="heading">
-                About
+                About Travel Planner
             </li>
             <li data-theme="a">
                 <a href="#pagecredit" data-transition="slidefade">
@@ -158,11 +156,32 @@
                 </a>
             </li>
         </ul>
-       <div data-theme="a" data-role="footer" data-position="fixed" data-add-back-btn="true">
-        <h3>
-            Info
-        </h3>
-       </div>
+       <div data-theme="a" data-role="footer" data-position="fixed">
+     <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="a" data-icon="arrow-l">
+                        Back
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#pageN" data-transition="fade" data-theme="a" data-icon="info">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#page-S" data-transition="fade" data-theme="a" data-icon="plus">
+                        Suggest
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
         
@@ -208,10 +227,8 @@
  <!-- Suggestions -->
 <div data-role="page" data-theme="a" id="page-S">
     <div data-theme="a" data-role="header">
-        <h3>
-            Suggestions
-        </h3>
-    </div>
+        <img src="images/TravelBrand.png" />    
+        </div>
     <div data-role="content"><!__________________________________________________________________>
         <ul data-role="listview" data-divider-theme="a" data-inset="true">
             <li data-theme="a">
@@ -261,15 +278,12 @@
             </ul>
         </div>
     </div>
-</div>	
+</div>
  
 <!-- camping ideas -->
-<div data-role="page" id="page1camp" data-theme="a" data-add-back-btn="true">
-    <div data-theme="a" data-role="header">
-        <h3>
-            Camping Ideas
-        </h3>
-    </div>
+<div data-role="page" id="page1camp" data-theme="a" 
+    <div data-theme="a" data-role="header" >
+        <img src="images/TravelBrand.png" />    
     <div data-role="content" data-theme="a">
         <div class="ui-grid-a">
             <div class="ui-block-a">
@@ -295,11 +309,34 @@
         </div>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
-        <h3>
-            
-        </h3>
+     <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page-S" data-transition="fade" data-theme="a" data-icon="arrow-l">
+                        Back
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#pageN" data-transition="fade" data-theme="a" data-icon="info">
+                        News
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#page-S" data-transition="fade" data-theme="a" data-icon="plus">
+                        Suggest
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div> 
+</div>
+ 
 <!-- Credits -->
 <div data-role="page" id="pagecredit" data-theme="a" data-add-back-btn="true">
     <div data-theme="a" data-role="header">
@@ -473,10 +510,10 @@
 </div> 
 
  <!--Form-->
-<div data-role="page" id="addItem" data-theme="a" >
+<div data-role="page" id="addItem" data-theme="a" data-position="fixed" data-add-back-btn="true">
     <div data-theme="a" data-role="header" >
-    <a href="#page1" data-transition="fade"></a>      
-    <img src="images/TravelBrand.png"  /> 
+         
+    <h3>Travel Form</h3> 
             
             </div>
     <div data-role="content">
@@ -507,9 +544,9 @@
         </div>
         <div id="checkboxes1" data-theme="a" data-role="fieldcontain">
             <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
-                <legend>
+                <label>
                     Important Items:
-                </legend>
+                </label>
                 <input id="Clothes" name="Clothes" data-theme="a" type="checkbox">
                 <label for="Clothes">
                     Clothes
@@ -564,7 +601,7 @@
 
 
 <!form above here-->
-<div data-role="dialog" id="TravelTypeErrors" data-add-back-btn="true">
+<div data-role="dialog" id="TravelTypeErrors" data-theme="a" data-add-back-btn="true">
     <div data-theme="a" data-role="header" data-position="fixed">
         <h3>
         Fields Missing 

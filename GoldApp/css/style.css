@@ -79,13 +79,6 @@ li {
 	
 	
 }*/
-label.error {
-	display: block;
-	margin: 1px 0;
-	color: #ff0d0d;
-		
-}
-	
 label {
 	color: rgba(255,163,0,1);
 	font-family: fantasy;
@@ -93,6 +86,18 @@ label {
 	font-weight: bold;
     text-align: left;	
 }	
+error label {
+    color:#fb2a2a;
+    font-family: fantasy;
+	font-size: 18px;
+	font-weight: bold;
+	}
+	/*legend {
+    color: rgba(255,163,0,1);
+    font-family: fantasy;
+    }
+
+
 /*fieldset {
 	background-image:-webkit-linear-gradient(#a2f0fc 0%, #e3e3e3 65.56%);
 	border-color: #1505a0;

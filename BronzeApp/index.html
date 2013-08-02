@@ -16,8 +16,9 @@
 	
 	<!-- StyleSheets under here -->
 	<!link rel="stylesheet" href="themes/Awesome.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />	
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/themes/BronzeApp.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+   <link rel="stylesheet" href="css/style.css" />
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -25,64 +26,61 @@
 </head>
 <body>
 <!-- Home -->
-<div data-role="page" id="page1" data-filter="true">
-    <div data-theme="a" data-role="header" data-position="fixed" >
-        <h3>
-            Travel Planner
-        </h3>
-    </div>
+<div data-role="page" id="page1"  data-theme="a" data-filter="true" >
+    <div data-theme="a" data-role="header" data-position="fixed" data-filter="true">
+     <img src="images/TravelBrand.png" > 
+            </div>
     <div data-role="content">
         <a href="#Home">
-            <div style="width: 288px; height: 130px; position: relative; background-color: #c4c2c2; border: 0px solid #b8b8b8;">
+            <div style="width: 288px; height: 130px; position: relative;  border: 0px solid #b8b8b8;">
                 <a href="Pageadditem.html" data-ajax="false">
                      <img src="images/Untitled-1.png" alt="Untitled-1.jpg" width="288" height="130" alt="image" style="position: relative; top: 50%; left: 50%; margin-left: -144px; margin-top: -66px"></a>
                 
-            </div>
-            
+                  </div>
         </a>
                 <div data-role="fieldcontain">
                 
-            <label for="searchinput1">
+            <label for="searchinput1" data-theme="a">
                 Search A Plan
             </label>
             <!input name="" id="searchinput1" placeholder="Search" value="" type="search">
         </div>
-        <ul data-role="listview" data-divider-theme="b" data-inset="true" data-filter="true">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true"  data-filter-theme="a" data-filter="true">
             <li data-role="list-divider" role="heading">
                 Browse Categories...
             </li>
-            <li data-theme="a">
+            <li data-theme="">
                 <a href="#pageError" data-transition="slide" data-filter="true">
                     Travel Budget
                 </a>
             </li>
             <!data for page goes here>
-            <li data-theme="a">
+            <li data-theme="">
                 <a href="#pageError" data-transition="slide">
                     Travel Items
                 </a>
             </li>
              <!data for page goes here>            
-           <li data-theme="a">
+           <li data-theme="">
                 <a href="#pageError"  data-transition="slide">
                     Travel Date
                 </a>
             </li>
             <!Data for page goes here>
-            <li data-theme="a">
+            <li data-theme="">
                 <a href="#pageError"  data-transition="slide">
                     Destination
                 </a>
             </li>
             
-            <li data-theme="a">
-                <a href="#pageError" data-transition="slide">
+            <li data-theme="">
+                <a href="#pageError"  data-transition="slide">
                     Travel Type
                 </a>
             </li>
         </ul>
     </div>
-    <div data-theme="b" data-role="footer" data-position="fixed">
+    <div data-theme="" data-role="footer" data-position="fixed">
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
@@ -92,17 +90,17 @@
                 </li>
                 
                 <li>
-                    <a href="#pageN" data-transition="fade" data-theme="a" data-icon="info">
+                    <a href="#pageN" data-transition="fade" data-theme="" data-icon="info">
                         News
                     </a>
                 </li>
                 <li>
-                    <a href="#page2" data-transition="fade" data-theme="a" data-icon="info">
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="info">
                         About
                     </a>
                 </li>
                 <li>
-                    <a href="#page-S"data-ajax="false" data-transition="fade" data-theme="a" data-icon="plus">
+                    <a href="#page-S"data-ajax="false" data-transition="fade" data-theme="" data-icon="plus">
                         Suggest
                     </a>
                 </li>
@@ -111,7 +109,7 @@
     </div>
 </div>	
 <!-- Home --><!About Page>
-<div data-role="page" id="page2" data-add-back-btn="true">
+<div data-role="page" id="page2" data-theme="a" data-add-back-btn="true">
     <div data-theme="a" data-role="header" data-position="fixed">
         <h3>
             Info Page
@@ -121,10 +119,10 @@
         <div data-role="fieldcontain">
            
         </div>
-        <ul data-role="listview" data-divider-theme="b" data-inset="true" data-filter="true">
+        <ul data-role="listview" data-divider-theme="a" data-inset="true" data-filter-theme="a" data-filter="true">
             <li data-role="list-divider" role="heading">
-                About
-            </li>
+                About Travel Planner
+            </li>            
             <li data-theme="a">
                 <a href="#pagecredit" data-transition="slidefade">
                     Credits
@@ -161,15 +159,15 @@
         
                  
  <!-- Author Info -->
-<div data-role="page" id="page7" data-add-back-btn="true" >
-    <div data-theme="a" data-role="header" >
+<div data-role="page" id="page7" dat-theme="a" data-add-back-btn="true" >
+    <div data-theme="a"  data-role="header" >
         <h3>
             Author Info
         </h3>
     </div>
-    <div data-role="content">
-        <div data-role="collapsible-set">
-            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+    <div data-role="content" data-theme="a">
+        <div data-role="collapsible-set" data-theme="a">
+            <div data-theme="a" data-role="collapsible" data-collapsed="true">
                 <h3>
                     Name
                 </h3>
@@ -177,7 +175,7 @@
             </div>
         </div>
         <div data-role="collapsible-set">
-            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+            <div data-theme="a" data-role="collapsible" data-collapsed="true">
                 <h3>
                     Likes
                 </h3>
@@ -185,7 +183,7 @@
             </div>
         </div>
         <div data-role="collapsible-set">
-            <div data-theme="b" data-role="collapsible" data-collapsed="true">
+            <div data-theme="a" data-role="collapsible" data-collapsed="true">
                 <h3>
                     Education
                 </h3>
@@ -201,14 +199,14 @@
 </div>          
 </div>          
  <!-- Suggestions -->
-<div data-role="page" id="page-S">
+<div data-role="page" id="page-S" data-theme="a">
     <div data-theme="a" data-role="header">
         <h3>
             Suggestions
         </h3>
     </div>
-    <div data-role="content"><!__________________________________________________________________>
-        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+    <div data-role="content" data-theme="a"><!__________________________________________________________________>
+        <ul data-role="listview" data-divider-theme="a" data-inset="true">
             <li data-theme="a">
                 <a href="#page1camp" data-transition="slide">
                     <img src="images/dreamstimecomp_24277331camping.png" class="ui-li-has-thumb" />
@@ -259,7 +257,7 @@
 </div>	
  
 <!-- camping ideas -->
-<div data-role="page" id="page1camp" data-add-back-btn="true">
+<div data-role="page" id="page1camp" data-add-back-btn="true" data-theme="a">
     <div data-theme="a" data-role="header">
         <h3>
             Camping Ideas
@@ -296,7 +294,7 @@
     </div>
 </div> 
 <!-- Home -->
-<div data-role="page" id="pagecredit" data-add-back-btn="true">
+<div data-role="page" id="pagecredit"  data-theme="a" data-add-back-btn="true">
     <div data-theme="a" data-role="header">
         <h3>
             Credits
@@ -381,13 +379,13 @@
     </div>
 </div> 
  
- <div data-role="page" id="pageError" data-add-back-btn="true">
+ <div data-role="page" id="pageError" dat-theme="a" data-add-back-btn="true">
     <div data-theme="a" data-role="header">
         <h3>
            No items found
         </h3>
     </div>
-    <div data-role="content">    
+    <div data-role="content" data-theme="a">    
     <p>This page is under construction.</p>
     <p>Please try back later</p>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -459,13 +457,13 @@
 </div>            
 </div>          
        
-<div data-role="page" id="pageError" data-add-back-btn="true">
+<div data-role="page" id="pageError" data-add-back-btn="true" data-theme="a">
     <div data-theme="a" data-role="header">
         <h3>
            No items found
         </h3>
     </div>
-    <div data-role="content">    
+    <div data-role="content" data-theme="a">    
     <p>This page is under construction.</p>
     <p>Please try back later</p>
     <div data-theme="a" data-role="footer" data-position="fixed">
@@ -476,7 +474,7 @@
 </div> 
 </div>
 
-<div data-role="page" id="pagegit" data-add-back-btn="true">
+<div data-role="page" id="pagegit" data-add-back-btn="true" data-theme="a">
     <div data-theme="a" data-role="header">
         <h3>
             Links 
