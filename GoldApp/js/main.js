@@ -36,9 +36,8 @@ var autofillData = function (){
 	 
 };
 
-var getData = function(){
 
-};
+
 
 var storeData = function(data, key){
    
@@ -87,6 +86,6 @@ var clearLocal = function(){
 	   }
  }
 };
-function showData(data){
+function showData(data,key){
 	displayData.addEventListener("click", getData);
 	}

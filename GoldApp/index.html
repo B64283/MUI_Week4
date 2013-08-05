@@ -16,7 +16,7 @@
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" href="css/themes/TravelBranding.css" />
+	<link rel="stylesheet" href="css/themes/newTravel4.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.css" />	
 	<link rel="stylesheet" href="css/style.css" />
 	
@@ -281,9 +281,10 @@
 </div>
  
 <!-- camping ideas -->
-<div data-role="page" id="page1camp" data-theme="a" 
+<div data-role="page" id="page1camp" data-theme="a"> 
     <div data-theme="a" data-role="header" >
         <img src="images/TravelBrand.png" />    
+    </div>
     <div data-role="content" data-theme="a">
         <div class="ui-grid-a">
             <div class="ui-block-a">
@@ -587,11 +588,14 @@
             <textarea name="notes" id="notes" placeholder="special notes"></textarea>
         </div>
         
-        <div data-role="fieldcontain">
-           <input type="submit" id="submit" data-theme="a" value="submit"/> 
-        </div>  
-        <div data-role="fieldcontain">   
-           <input type="reset" id="reset" value="reset" data-theme="a" data-mini="true"/>       
+        <div data-role="navbar">
+           <ul>
+           <li><input type="submit" id="submit" data-theme="a" value="SUBMIT"/></li>
+          
+           
+           <li><input type="reset" id="reset" value="RESET" data-theme="a" data-icon="delete" data-mini="true"/></li>       
+           
+           </ul>
         </div>
         
         <a href="#TravelTypeErrors" id="tterrorsLink" data-rel="dialog" data-transition="pop"></a>
